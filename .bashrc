@@ -39,5 +39,5 @@ PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
 BROWSER=/usr/bin/xdg-open
 export TERM='xterm-256color'
 
-PATH=$PATH:/opt/play-2.2.1/
+PATH=$PATH:/opt/play-2.2.1/:/usr/share/android-sdk/tools/
 export PATH
