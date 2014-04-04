@@ -6,6 +6,7 @@ alias ls='ls --color'
 alias ll='ls -l --color'
 alias la='ls -al --color'
 alias dmesg='dmesg --color'
+alias adbre='sudo adb kill-server && sudo adb start-server'
 
 # ex - archive extractor
 # usage: ex <file>
@@ -38,6 +39,10 @@ ex ()
 PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
 BROWSER=/usr/bin/xdg-open
 export TERM='xterm-256color'
+export LANG="en_US.UTF-8"
 
-PATH=$PATH:/opt/play-2.2.1/:/usr/share/android-sdk/tools/
+EDITOR=vim
+export EDITOR
+
+PATH=$PATH:/opt/play-2.2.1/:/usr/share/android-sdk/tools/:/usr/share/android-sdk/platform-tools/
 export PATH
