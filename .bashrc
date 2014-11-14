@@ -3,7 +3,7 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
 alias pacman='sudo /usr/bin/pacman --color=always'
 alias ls='ls --color'
-alias ll='ls -l --color'
+alias ll='ls -lh --color'
 alias la='ls -al --color'
 alias dmesg='dmesg --color'
 alias adbre='sudo adb kill-server && sudo adb start-server'
@@ -44,5 +44,22 @@ export LANG="en_US.UTF-8"
 EDITOR=vim
 export EDITOR
 
-PATH=$PATH:/opt/play-2.2.1/:/usr/share/android-sdk/tools/:/usr/share/android-sdk/platform-tools/
+ANDROID_HOME=/usr/share/android-sdk/
+export ANDROID_HOME
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/opt/cocos2d-x/tools/cocos2d-console/bin
+
+# Add environment variable NDK_ROOT for cocos2d-x
+export NDK_ROOT=/opt/android-ndk-r9d/
+
+# Add environment variable ANDROID_SDK_ROOT for cocos2d-x
+export ANDROID_SDK_ROOT=/usr/share/android-sdk
+
+# Add environment variable ANT_ROOT for cocos2d-x
+export ANT_ROOT=/usr/bin
+
+PATH=$PATH:/opt/play-2.2.1/:$ANDROID_HOME:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools/
 export PATH
+
+VBOX_USB=usbfs
