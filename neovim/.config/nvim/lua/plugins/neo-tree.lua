@@ -10,5 +10,7 @@ return {
   },
   config = function()
     vim.keymap.set("n", "<leader>1", ":Neotree filesystem toggle<CR>")
+    vim.keymap.set("n", "<leader>2", ":Neotree buffers float toggle<CR>")
+    vim.keymap.set("n", "<leader>3", ":Neotree git_status toggle<CR>")
   end,
 }

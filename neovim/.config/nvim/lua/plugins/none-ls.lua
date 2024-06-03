@@ -15,6 +15,8 @@ return {
         require("none-ls.code_actions.eslint"),
         -- Lua
         null_ls.builtins.formatting.stylua,
+        -- Makefile
+        null_ls.builtins.diagnostics.checkmake,
         -- Spelling
         null_ls.builtins.completion.spell,
       },
