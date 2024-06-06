@@ -6,7 +6,10 @@ setup:
 		neovim \
 		stow \
 		lazygit \
-		powerlevel10k
+		powerlevel10k \
+		bat \
+		rg \
+		eza \
 
 delete:
 	stow --verbose --target=$$HOME --delete */
